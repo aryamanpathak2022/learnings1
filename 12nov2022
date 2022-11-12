@@ -12,3 +12,35 @@ int main()
         return 0;
 
 }
+
+
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+        int num1,num2,c,max,min;
+        scanf("%d",&num1);
+        scanf("%d",&num2);
+        scanf("%d",&c);
+        max=num1;
+        min=num2;
+
+        if (num2<num1)
+        {
+                max=num2;
+                min=num1;
+        }
+        if(max<c)
+                max=c;
+        if(c<min)
+                min = c;
+
+                printf("max is %d\n",max);
+                printf("min is %d\n",min);
+        return 0;
+
+}
